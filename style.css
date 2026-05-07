@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 .profile-pic {
@@ -9,4 +9,23 @@ body {
     border: 2px solid white;
     margin: 20px auto 0;
     display: block;
+}
+.icon-image1{
+    height: 25px;
+    vertical-align: middle;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.icon-image2,
+.icon-image3 {
+    height: 45px;
+    vertical-align: middle;
+}
+.icon-image2{
+    margin-left: 50%;
 }
