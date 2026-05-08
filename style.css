@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
 .profile-pic {
     width: 200px;
@@ -35,3 +35,56 @@ body {
     filter: brightness(1.05);
 }
 
+.about-heading{
+    text-align: left;
+    margin-left: 20%;
+    font-size: 28px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #333;
+}
+.about-para{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.resume-btn a {
+    text-decoration: none;
+    color: white;
+}
+.resume-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4f3e48;
+    border-radius: 80px;
+    margin-left: 20%;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.resume-btn:hover {
+    background-color: #3e2f38;
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
+
+.btn-contener{
+    height: 150px;
+    width: 500px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:white;
+    border-radius: 8px;
+    margin-right: 10%;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
+.btn-contener:hover {
+    background-color: white;
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
