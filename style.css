@@ -3,12 +3,13 @@ body {
     font-family: Arial, sans-serif;
 }
 .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 2px solid white;
     margin: 20px auto 0;
     display: block;
+    
 }
 .icon-image1{
     height: 25px;
@@ -25,7 +26,12 @@ body {
 .icon-image3 {
     height: 45px;
     vertical-align: middle;
+    transition: transform 0.25s ease, filter 0.25s ease;
 }
-.icon-image2{
-    margin-left: 50%;
+
+.social-links a:hover .icon-image2,
+.social-links a:hover .icon-image3 {
+    transform: scale(1.18);
+    filter: brightness(1.05);
 }
+
