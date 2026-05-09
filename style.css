@@ -163,22 +163,7 @@ body {
     vertical-align: middle;
     margin-right: 5px;
 }
-.learning-section{
-    height:150px;
-    width:250px;
-    margin-top: 40px;
-    text-align: center;
-    font-size: 18px;
-    color: #555;
-    background-color: white;
-    border-radius: 30px;
-    padding: 20px;
-    margin-left: 60%;
-    box-shadow: #c5c1c1 0px 4px 5px;
-}
-.learning-section:hover {
-    box-shadow: #c5c1c1 0px 4px 5px;
-}
+
 .project-section{
     margin-top: 40px;
     text-align: center;
@@ -225,8 +210,28 @@ body {
     margin-bottom: 20px;
     text-transform: uppercase;
     background-color: #777373;
-    color: white;
+    color: rgba(255, 255, 255, 0.764);
     width: 100%;
     margin: 0%;
     border-radius: 10px 10px 20px 20px;
+}
+.learning-section{
+     width:300px;
+    padding:30px;
+    margin-top: 30px;
+    border-radius:30px;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+.learning-section:hover {
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
+.education-section{
+        display:flex;
+    gap:40px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+
 }
