@@ -1,6 +1,9 @@
 body {
     background-color: white;
     font-family: sans-serif;
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
 }
 .profile-pic {
     width: 200px;
@@ -34,25 +37,109 @@ body {
     transform: scale(1.18);
     filter: brightness(1.05);
 }
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
 
 .about-heading{
     text-align: left;
-    margin-left: 20%;
+    margin-left: 40%;
+    padding-top: 10px;
     font-size: 28px;
     margin-top: 40px;
     text-transform: uppercase;
-    color: #333;
+    color: #544f4f;
 }
 .about-para{
     text-align: left;
     font-size: 18px;
     margin-top: 20px;
+   margin-left: 10%;
+   margin-right: 10%;
     color: #555;
 }
-.about-content {
+.left-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+.btn{
+   margin-left: 40%;
+   margin-bottom: 10px;
+   padding: 10px 20px;
+   border-radius: 30px;
+   color:white;
+   background-color: #4f3d48;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+.btn:hover {
+    background-color: #3e2f38;
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
+.right-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.btn-container1 {
+    height: 270px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+    align-items: center;
+   padding-top: 5px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: #c5c1c1 0px 4px 5px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.btn-container1:hover {
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
+.btn1, .btn2, .btn3, .btn4 {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 1px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+.heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #544f4f;
 }
 .resume-btn a {
     text-decoration: none;
@@ -63,7 +150,7 @@ body {
     padding: 10px 20px;
     background-color: #4f3e48;
     border-radius: 80px;
-    margin-left: 20%;
+    margin-left: 60%;
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
@@ -71,20 +158,75 @@ body {
     background-color: #3e2f38;
     box-shadow: #c5c1c1 0px 4px 5px;
 }
-
-.btn-contener{
-    height: 150px;
-    width: 500px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color:white;
-    border-radius: 8px;
-    margin-right: 10%;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
+.image2{
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.learning-section{
+    height:150px;
+    width:250px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 60%;
     box-shadow: #c5c1c1 0px 4px 5px;
 }
-.btn-contener:hover {
-    background-color: white;
+.learning-section:hover {
     box-shadow: #c5c1c1 0px 4px 5px;
+}
+.project-section{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    background-color:  white;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
+.project-section:hover {
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.project-card1{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+    align-items: center;
+   padding-top: 5px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: #c5c1c1 0px 4px 5px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.project-card1:hover {
+    box-shadow: #c5c1c1 0px 4px 5px;
+}
+.heading1{
+    text-align: center;
+    padding-top: 10px;
+     font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background-color: #777373;
+    color: white;
+    width: 100%;
+    margin: 0%;
+    border-radius: 10px 10px 20px 20px;
 }
